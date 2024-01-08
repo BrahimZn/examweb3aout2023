@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:3001
+
+### GetAll
+GET {{baseUrl}}/jokes/
+
+
+### Get one 
+GET {{baseUrl}}/jokes/6461f476d9a9da9dbeade34e
+
+### Create
+POST {{baseUrl}}/jokes/
+Content-Type: application/json
+
+{
+   "question": "test ajout",
+    "answer": "eeeeeee",
+    "category": "animal"
+}

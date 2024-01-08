@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:3001
+
+### GetAll
+GET {{baseUrl}}/scores/
+
+
+### post score
+POST {{baseUrl}}/scores/
+Content-Type: application/json
+
+{
+    "username": "testAjout",
+    "score": 100,
+    "joke": "6461f476d9a9da9dbeade34e"
+}
+### post score with missing data
+POST {{baseUrl}}/scores/
+Content-Type: application/json
+
+{
+    
+    "score": 100,
+    "joke": "6461f476d9a9da9dbeade34e"
+}
+
+
+### post score woth not valid id joke 
+POST {{baseUrl}}/scores/
+Content-Type: application/json
+
+{
+    "username": "testAjout",
+    "score": 100,
+    "joke": "6481f476d9a9da9dbeade34e"
+}
